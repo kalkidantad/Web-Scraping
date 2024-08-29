@@ -7,7 +7,7 @@ import logging
 def send_to_telegram(bot_token, chat_id, text):
     url = f"https://api.telegram.org/bot6702100657:AAHib2mUUrsg9GghbV6Pec58p3vi-E2wpLc/sendMessage"
     params = {
-        'chat_id': 954362833,
+        'chat_id': 000000,
         'text': text
     }
     response = requests.post(url, params=params)
@@ -37,8 +37,8 @@ def find_jobs(bot_token, chat_id, previous_jobs):
     return previous_jobs  # Return the updated previous_jobs list
 
 if __name__ == '__main__':
-    bot_token = "6702100657:AAHib2mUUrsg9GghbV6Pec58p3vi-E2wpLc"
-    chat_id = "954362833"
+    bot_token = "replace with your bot token"
+    chat_id = "0000000"
 
     # At the start of the script, load previous_jobs from a file
     try:
